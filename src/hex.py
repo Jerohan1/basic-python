@@ -13,10 +13,10 @@ command, x = sys.argv[1:3]
 match command:
     case "encode":
         # Implement the encoding here
-        encoding = ""
+        encoding = ''.join([hex(ord(n)) for n in x])
         print(encoding)
 
     case "decode":
         # Implement the decoding here
-        decoding = ""
+        decoding = "".join([chr(int(h, base = 16)) for h in x.split('0x')[1:]])
         print(decoding)
