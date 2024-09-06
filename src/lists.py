@@ -9,7 +9,7 @@ x = [int(a) for a in sys.stdin.read().split()]
 # space separated format, you cannot use print(x) since that will add the
 # square brackets and the commas, but you can use
 #
-print(" ".join(str(i) for i in x))
+#print(" ".join(str(i) for i in x))
 #
 # to first translate the integers into strings, (str(i) for i in x),
 # and then merge them with spaces between them, " ".join(...).

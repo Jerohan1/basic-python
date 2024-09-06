@@ -18,7 +18,8 @@ for c in password:
         checks[2] = True
     if c in "$#@":
         checks[3] = True
-    if len(password) < 17 and len(password) >= 6:
+    if len(password) < 17 and len(password) > 5:
         checks[4] = True
 if checks.count(True) == 5:
-    print(is_valid)
+    is_valid = True
+print(is_valid)
