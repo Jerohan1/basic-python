@@ -4,4 +4,4 @@ runs:
   using: composite
   steps:
       - name: Run autograding
-        uses: education/autograding@v3
+        uses: education/autograding@v2
